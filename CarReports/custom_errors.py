@@ -1,0 +1,2 @@
+class CSVError(Exception):
+    pass

@@ -1,0 +1,10 @@
+How to run the code:
+1. In terminal, navigate to project CarReports
+2. Activate virtual environment: 'source venv/bin/activate'
+3. Change directory to CarReports folder: 'cd CarReports'
+4. Run program and generate reports: 'python3 main.py'
+5. Open http://localhost:5000/ to view reports
+
+How to run the tests:
+1. Change directory to testing folder: 'cd testing'
+2. In terminal, enter: 'pytest test_data.py'

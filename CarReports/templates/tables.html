@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Reports</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Reports</h1>
+    <h3>Average Listing Selling Price per Seller Type</h3>
+    {{ avg_sell.to_html(index=False) | safe}}
+    <h3>Percentual distribution of available cars by Make</h3>
+    {{ make.to_html(index=False) | safe}}
+    <h3>Average price of the 30% most contacted listings</h3>
+    {{ avg_price.to_html(index=False) | safe}}
+    <h3>The Top 5 most contacted listings per Month</h3>
+    {% for key, value in top_dict.items() %}
+        <h4>Month: {{key}}</h4>
+        {{ value.to_html(index=False) | safe}}
+    {% endfor %}
+{% endblock %}
