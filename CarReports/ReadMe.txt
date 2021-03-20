@@ -8,3 +8,10 @@ How to run the code:
 How to run the tests:
 1. Change directory to testing folder: 'cd testing'
 2. In terminal, enter: 'pytest test_data.py'
+
+Description:
+A web application that displays the following reports based on sample Excel data.
+- Average Listing Selling Price per Seller Type
+- Distribution (in percent) of available cars by Make
+- Average price of the 30% most contacted listings
+- The Top 5 most contacted listings per Month
